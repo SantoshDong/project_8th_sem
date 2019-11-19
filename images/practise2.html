@@ -1,0 +1,35 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+  <style>
+    .fonts {
+      border: 2px solid green;
+      color: green;
+    }
+  </style>
+  <script type="text/javascript">
+    $(function() {
+      $('#btnShow').click(function() {
+        //This is used for show the div.
+        $('#divShow').show();
+
+        //This setTimeout function execute when click on show div buton and hide automatically.
+        setTimeout(function() {
+          $("#divShow").fadeOut(1500);
+        }, 5000);
+
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="fonts" id="divShow">
+    <h2>Hi, Welcome you to code-sample.com.</h2> zfvdsgdsgsgsgefgrsfgdfghdfgfdgdf
+    my name is prabin kkhadka<br>
+    i just completed my university 
+  </div>
+</body>
+
+</html>

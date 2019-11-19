@@ -1,0 +1,104 @@
+ /*for login hero image*/
+ #login_body{
+    background: url(./images/finalbackground.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height:85vh;
+  }
+  #hero_addimage{
+    background: url(./images/hero_football2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height:65vh;
+  }
+  #hero_cricketmatch{
+    background: url(./images/cricketfootball.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height:100vh;
+  }
+  #hero_adminfootball{
+    background: url(./images/hero_football1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+
+  }
+  .heading-admin-login{
+    font-size:2.5em;
+    text-align:center;
+  }
+
+  .for-logo1{
+      height:15vh!important;
+  }
+  .for-logo2{
+      height:15vh!important;
+  }
+  .add-football-hero{
+    border:1px solid gray;
+    padding:5px;  
+    background: rgba(26,155,148,0.11);
+  }
+
+.add-cricket-hero{
+border:1px solid gray;
+padding:5px;
+background: rgba(26,155,148,0.11);
+}
+.file{
+  background-color: lightblue;
+  border: 1px solid #AFD275;
+  border-radius:10%;
+}
+.button {
+  background-color:#4CAF50; /* green*/
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top:2%;
+  border-radius:.8em;
+}
+  @media only screen and (max-width:768px){
+      /*responsive layout for login page */
+      .heading-admin-login {
+        font-size: 1.5em;
+      }
+      .userLogo {
+        width: 25%;
+      }
+      .wrap_Form {
+        width: 90%;
+
+      }
+      .navbar-expand-md .navbar-nav .nav-item .nav-link {
+        font-size: 1em!important;
+      }
+     
+ .add-football-hero h1{
+   font-size:1.5em!important;; 
+ }
+
+ .add-cricket-hero h1{
+  font-size:1.5em!important;; 
+}
+  }
+  @media only screen and (max-width:425px){
+       /*responsive layout for login page */
+    .heading-admin-login {
+        font-size: 1em;
+    }
+    .wrap_loginForm {
+        width:90%;
+        font-size:1em;
+     }
+
+}

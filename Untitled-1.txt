@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="style.css">
+    </head>   
+        
+    <body>
+        <?php
+            $id = $_REQUEST['id'];
+$conn = new mysqli('localhost', 'root', '', 'sportstime');
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+$result = mysqli_query($conn, "SELECT * FROM matchinfo where id = '$id'");
+if($result){
+    if(mysqli_num_rows($result)>0){
+        
+        while($news = mysqli_fetch_assoc($result)){
+            //print_r($news);       
+?>
+<!--<div class="wrap_news">-->
+<div class="wrap_games">
+    <div class="wrap_match_list">
+    <div class="LeftTeam">
+        <img class="club_image" src="<?php echo "clubLogo/".$news['image1'];?>">
+        <h5 class="TeamName"><?php echo $news['teamA'];?></h5>
+    </div>
+    <div class="RightTeam">
+        <img class="club_image" src="<?php echo "clubLogo/".$news['image2'];?>">
+        <h5 class="TeamName"><?php echo $news['teamB'];?></h5>
+    </div>
+    </div>
+</div>
+<?php
+        }
+    }
+}
+?>
+<!--Enter player of team A-->
+<?php
+    if(isset($_POST['insert_teama_player'])){
+        $name=$_POST['playername1'];
+        $position=$_POST['position1'];
+        $team=$_POST['team1'];
+        $a=1;
+        echo $name."<br/>".$position."<br/>".$team."<br/>".$a;
+        $a++;
+        if($a>1111){
+            echo "Team A has playing XI player";
+        }
+    }
+
+//--Enter player of team B
+
+if(isset($_POST['insert_teamb_player'])){
+    $name1=$_POST['playername2'];
+    $position1=$_POST['position2'];
+    $team1=$_POST['team2'];
+    $b=1;
+    echo $name1."<br/>".$position1."<br/>".$team1."<br/>".$b;
+    $b++;
+    if($b>11){
+    echo "Team B has playing XI player";
+    }
+}
+?>
+
+<!--form-->
+<div class="wrap_player_info">
+    <div class="wrap_left_team_player">
+    <form  enctype="multipart/form-data" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+        <input type="text" name="playername1" placeholder="Player Name" required/>
+        <input type="hidden" name="team1" value="<?php echo $news['teamA'];?>">
+        <input type="text" name="position1" placeholder="Position" required/>
+        <input type="submit" name="insert_teama_player" value="Update"/>
+    </form>
+    </div>
+
+    <div class="wrap_right_team_player">
+    <form  enctype="multipart/form-data" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+        <input type="text" name="playername2" placeholder="Player Name" required/>
+        <input type="hidden" name="team2" value="<?php echo $news['teamB'];?>">
+        <input type="text" name="position2" placeholder="Position" required/>
+        <input type="submit" name="insert_teamb_player" value="Update"/>
+    </form>
+    </div>
+</div>
+
+</body>
+</html>                                         
+    </body>
+</html>

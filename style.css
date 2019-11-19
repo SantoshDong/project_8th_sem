@@ -1,0 +1,318 @@
+body{
+    border:0px !important;
+    padding:0px !important;
+    margin:0px !important;
+    overflow-x: hidden;
+}
+.row{
+    margin:0px !important;
+    padding:0px !important;
+}
+#hero_addimage{
+    background: url(./images/cricketfootball.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height:85vh;
+  }
+  .detail_wrap_img a button{
+    text-transform:uppercase;
+    background-color: #4CAF50;
+    color: white;
+    padding: 1vw 4vw;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .wrap_img{
+    width: 100%;
+    height: 38vh;  
+    overflow-x: hidden; 
+}
+.wrap_img img{
+    display: block;
+    transition: transform .4s; 
+}
+.wrap_img:hover img{
+    transform: scale(1.1);
+    transform-origin: 50% 50%;
+}
+
+/*logo*/
+.wrap_header_section{
+    margin:0px;
+    padding:0px;
+    width:100%;
+    height:auto;
+}
+.wrap_logo{
+    margin:0px;
+    padding:0px;
+    width:6.5%;
+    margin:0 0 0 1%;
+    height:auto;
+}
+.logo_img{
+    margin:0px;
+    padding:0px;
+    width:100%;
+    height:auto;
+}
+.wrap_site_name{
+    margin:0px;
+    padding:0px;
+    width:80%;
+    height:auto;
+}
+
+
+/*Login form css*/
+.wrap_loginForm{
+    margin-left:auto;
+    background:rgba(26,155,148,0.11);
+    margin-right:auto;
+    width:30%;
+    padding:10px;
+    border-radius: 20px;
+}
+.userLogo{
+    width:30%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:10%;
+}
+.userLogo__img{
+    height:auto;
+    width:100%;
+}
+.wrap_Form{
+    width:70%;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+/*news css*/
+.wrap_whole_news{
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    height:48vh;
+    margin: 5px 0px;
+}
+
+.wrap_news{
+    border:1px solid black;
+    height:5vh;
+}
+.wrap_news2{
+    border:1px solid black;
+    text-align:center;
+    font-weight:700;
+    height:5vh;
+    font-size:1.5rem;
+}
+.wrap_news span a{
+    text-decoration:none;
+    color: white;
+}
+.wrap_news span a:hover{
+   color:skyblue;
+}
+
+.feature_img{
+    width:100%;
+    height:auto;
+}
+.news_heading{
+    display:block;
+    background:black;
+    width:100%;
+    color:white;
+    font-size:2vw;
+    text-align:center;
+}
+span>a {
+    color:white;
+    color:white;
+    display:block;
+    width:100%;
+    font-size:1.5vw;
+    text-decoration: none;
+}
+.detail_wrap_img{
+    width:90%;
+    height:auto;
+    margin:0 auto;
+}
+.news_detail{
+    background:rgba(26,155,148,0.11);
+    width:100%;
+    height:auto;
+    font-size: 2vw;
+    padding:2px;
+}
+
+/* match list */
+.wrap_games{
+    padding:1rem;
+    display:block;
+    width:100%;
+    background: rgba(26,155,148,0.11);
+    margin-bottom:5%;
+}
+.wrap_live_stream{
+    width:10%;
+    margin:0 auto;
+}
+.wrap_live_stream span.stream_match a{
+    text-decoration:none;
+    margin:0px;
+    padding:0px;
+    text-align:center;
+    display:block;
+}
+.wrap_live_stream span.stream_match a button{
+    border-radius:10px;
+    padding:0rem 1rem;
+}
+.wrap_live_stream span.stream_match a button:hover{
+    background-color:#28a745;
+    transform: scale(1.1);
+
+}
+.wrap_match_list{
+    width:100%;
+    display:flex;
+}
+.LeftTeam{
+    width:45%;
+    display:block;
+    text-align:center;
+    
+}
+.RightTeam{
+    width:45%;
+    display:block;
+    text-align:center;
+    
+}
+.middle_text{
+    width:10%;
+}
+.middle_text h1{
+    font-size:9rem;
+    color:red;  
+    font-family: "Times New Roman", Times, serif;
+}
+.TeamName{
+    padding:0px;
+    margin:0px;
+    color:brown;
+    width:100%;
+    text-align:center;
+}
+.club_image{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+}
+
+/*Inserting player info to each team*/
+.wrap_player_info{
+    width:100%;
+    display:flex;
+}
+    
+.wrap_left_team_player{
+    width:45%;
+    display:block;
+    border:1px solid black;
+    margin-left:2.5%;
+    margin-right:2.5%;
+}
+    
+.wrap_right_team_player{
+    width:45%;
+    display:block;
+    border:1px solid blue;
+    margin-left:2.5%;
+    margin-right:2.5%;
+
+}
+
+/*Admin Navbar*/
+.navbar{
+    display:flex;
+}
+.navbar__head{
+    display:flex;
+    width:100%;
+}
+.navbar__head__item{
+    width:25%;
+}
+li{
+list-style-type:none;
+}
+a:hover{
+    text-decoration: none;
+}
+
+/*sub navbar*/
+.sub_navbar{
+    width: 75%;
+    margin: auto;
+}
+.sub_navbar__head{
+    display: flex;
+    width: 100%;
+    margin: auto
+}
+.sub_navbar__head__item{
+    width:33%;
+    text-align: center;
+}
+/*for cricket hero image*/
+.for-hero img.cricket-hero-image{
+    width:100%;
+    height:100vh
+}
+.for-hero img.football-hero-image{
+    width:100%;
+    height:100vh
+}
+@media only screen and (max-width:768px){
+    
+    span>a {
+        font-size:3vw!important;
+    }
+    .for-hero img.cricket-hero-image{
+        height:60vh;
+    }
+    .for-hero img.football-hero-image{
+        height:60vh;
+    }
+    .wrap_whole_news {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 5px 0px;
+    }
+
+
+}
+@media only screen and (max-width: 500px){
+.for-hero img.cricket-hero-image {
+    height:40vh;
+}
+.for-hero img.football-hero-image {
+    height: 40vh;
+}
+.for-footer h2{
+    font-size:1.5rem;
+}
+}
